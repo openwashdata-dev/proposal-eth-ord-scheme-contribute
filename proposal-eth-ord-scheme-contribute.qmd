@@ -74,8 +74,11 @@ Please explain which aim(s) of the ORD “contribute projects” you seek to add
 
 - Providing community services, such as the organization of a workshop or training, or coordination for the development of an ORD standard.
 
-## Copy from CO WASH Symposium abstract
+## Literature research
 
+- 
+
+## Copy from CO WASH Symposium abstract
 
 In our first use case, we reproduce indicator estimates for SDG 6.2 using R. The JMP uses linear regression models to produce these estimates for reasons including the often small number of data points per indicator, reliability over time, and comparability between countries. In our research, we have experimented with alternative statistical models that could be applied to some countries. 
 
