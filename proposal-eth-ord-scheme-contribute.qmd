@@ -1,0 +1,89 @@
+---
+title: "Untitled"
+format: html
+editor: source
+---
+
+# Info
+
+## Website
+
+- Measure 1: Calls for Field-Specific Actions
+- https://ethrat.ch/en/measure-1-calls-for-field-specific-actions/
+- Contribute projects will help researchers to contribute to existing open communities built around ORD. They will validate their integration with existing infrastructures (including international ones) and focus on their potential to advance the scientific  impact of the field as well as their technical quality.
+
+## Email
+
+- Funding for “Contribute projects” aims at:
+    - Contributing a **piece of software, data, hardware**, etc., which **simplifies** an established ORD practice, develops its **research potential**, or otherwise improves it.
+    - Curating or otherwise improving available ORD, for example, by updating existing data to **adapt it to the evolution of ORD practices** or by linking different ORD datasets or by collecting and curating existing data before uploading it to an ORD platform.
+    - Providing **community services**, such as the organization of a **workshop** or training, or **coordination** for the development of an ORD standard.
+    
+Funding is available for projects of up to 12 months with an overall budget that must be CHF 30’000.
+
+## Application guidelines (ETH Board)
+
+- https://ethrat.ch/wp-content/uploads/2022/10/Application-guidelines_TrackC-Contribute-projects-3rd-call-1.pdf
+- Preference will be given to projects which engage and are connected to a community
+
+## Application guidelines (ETH Zurich)
+
+- https://ethrat.ch/wp-content/uploads/2022/06/2022-05-00-ETH-ORD-EPFLETHZ-information-to-applicants-Contribute.pdf
+- For applicants at ETHZ
+- In this Contribute call, applicants at ETHZ must contribute 25% of the total budget from
+the resources of their lab/group/unit, either in-cash or in-kind. See the budgeting
+guidelines below for eligible contributions
+
+## Online submission platform
+
+- https://epflresearchfunds.gomovein.com/locallogin/5d77bf02089cc332e062a3a2/eng
+- SNSF guidelines CV
+- Asbtract (max 1500 characters)
+- 5 keywords
+
+# Project Proposal
+
+## Instructions
+
+Your project proposal must not exceed 6 pages, excluding the bibliography (A4, Arial 11-point font, 1.5 line-spacing, 2-centimeter margins). Please address all points below.
+
+## Proposal full title 
+
+Please include a project title (max. 12 words); this title will be used for all correspondence. Proposal Acronym (mandatory)
+
+## Background and motivation
+
+Please explain which aim(s) of the ORD “contribute projects” you seek to address:
+
+- Contributing a piece of software, data, hardware, etc., which simplifies an established ORD practice, develops its research potential, or otherwise improves it. 
+- Curating or otherwise improving available ORD. For example, by updating existing data to adapt it to the evolution of ORD practices. Or by linking different ORD datasets. Or by collecting and curating existing data before uploading it to an ORD platform.
+- Providing community services, such as the organization of a workshop or training, or coordination for the development of an ORD standard.
+
+## ORD project plan
+
+- Please describe your project design, including how it addresses the aim(s) of the ORD “contribute projects” described above. Please refer to the scientific literature as well as any preliminary, unpublished results that have informed your approach. 
+
+- Which specific gap(s) in knowledge will your work address? Why is your approach innovative?
+
+- What questions will the project answer? What specific outcomes will you focus on? 
+
+- Which strategy will you use to address the questions you seek to answer?
+
+## Impact
+
+Please address these specific points: 
+
+- How sustainable is the proposed project inside the ETH Domain? 
+- To what extent may an existing or a newly formed community (be able to) engage with the ORD practice(s) built-up during the project?
+
+## Bibliography
+
+Please list all bibliographic references for the preceding sections.
+
+## Work Packages and milestones
+
+Please include a detailed Gantt chart or table, outlining the timeline of your project, including key activities and major deliverables.
+
+Resources (including project costs)
+Give the amount of funding considered necessary to fulfil the objectives for the duration of the project, as well as a full justification
+
