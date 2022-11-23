@@ -74,58 +74,32 @@ Please explain which aim(s) of the ORD “contribute projects” you seek to add
 
 - Providing community services, such as the organization of a workshop or training, or coordination for the development of an ORD standard.
 
-## Literature research
-
-- 
-
-## Copy from CO WASH Symposium abstract
-
-In our first use case, we reproduce indicator estimates for SDG 6.2 using R. The JMP uses linear regression models to produce these estimates for reasons including the often small number of data points per indicator, reliability over time, and comparability between countries. In our research, we have experimented with alternative statistical models that could be applied to some countries. 
-
-In this session, we will introduce the "jmpraw" R data package and show a live coding demonstration of how it can be used to reproduce indicator estimates. We will present key results from our research on applying alternative non-linear models to produce indicator estimates.
-
-This session highlights how making data accessible in a format that follows FAIR data principles can positively benefit other people's work. It supports the mission of the Colorado WASH Symposium by applying tools that are open and free for anyone to use. 
-
-
-
 ### UNICEF/WHO Joint Monitoring Programme (JMP)
 
-The WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (the JMP) was established in 1990. Since then, a database of nearly 20'000 data points has been established for sanitation alone.
+The WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (JMP) was established in 1990 to monitor global progress on drinking water, sanitation and hygiene. The JMP produces estimates for a total of 26 indicators related to water, sanitation and hygiene (WASH). Estimates are produced using linear regression models at the country, regional, and the global levels [@who/unicefjointprogrammeforwatersupplysanitsationandhygienejmp2018jmp]. 
 
-The data is collected from various sources, including censuses, household surveys, administrative data, and others (e.g. research). Data structures between these sources are highly heterogenous, and a significant amount of effort is invested into extracting data from each source and bringing it into a defined format. Anyone can access the result of this work through the so-called "country files", which are MS Excel workbooks containing each country's raw data. 
+### JMP modelled estimates (data output)
 
-While the JMP uses this input data specifically to produce indicator estimates for SDG indicators 6.1 and 6.2, there is great potential for unforeseen use cases (e.g. research, teaching, joining with other data, etc.). These could be enabled by making the data readily accessible in a form that follows FAIR data principles. 
+The produced estimates are the only available source of comprehensive and internationally-comparable information on WASH coverage. Data from JMP are also used in reports used to estimate the global burden of disease associated with water and sanitation and to assess the cost-effectiveness, benefit-cost ratio, global expenditure, and investment needs in global drinking water and sanitation [@bartram2014globala]. More recently the data has been used to quantify the service needs for 772 million onsite sanitation facilities [@greene2021role].
 
-Availability of data is one of the key constraints within the WASH sector, and from observing current trends, it becomes a key focus area for organisations (e.g. UNICEF Game Plan
-to Reach Safely Managed Sanitation; WHO monitoring of the safe management of on-site sanitation (SMOSS) services).
+### JMP data input 
 
-- history
-  - WASH funding and surveys
-      - DHS
-      - MICS
-  - MDGs/SDGs, global monitoring
-  - 1990
-  - **copy from methods document**
-- importance / relevance of the data
-- mandate
-- data publication
-  - is open but not FAIR
-  - we contribute a piece of software and data and address aim 1 
-  - we curate data carefully and add valuable additional variables/categories to the exisiting data that allows for new types of analyses
-- we seek to address the aim of providing a "community service" by organising pracitical workshops and training on the developed software packages
+Every two years the JMP updates its global databases to incorporate the latest available national data. [@who/unicefjointprogrammeforwatersupplysanitsationandhygienejmp2021metadata]. The data is collected from various sources, including censuses, household surveys, administrative data, and others (e.g. research). Data formats between these sources are highly heterogenous, and a significant amount of effort is invested into extracting data from each source and bringing it into a standardised format. 
 
-## openwashdata community
+### JMP Country Files
 
-- engagement with the published data on variety of levels
-- highly relevant dataset that also opens the opportuntities for people to see "what is behind the curtain"
-- motivation to provide high-quality standardised data that feeds into the the JMP raw database
-- use for training materials or own research
+So-called JMP Country Files are used for recording these data inputs in a hidden sheet of a Microsoft Excel workbook. A statistical analysis software package (Stata 14.0) imports the for all the 232 countries, areas, and territories for which data are available, and runs the estimation model. The resulting estimates are exported back to each country file in another hidden sheet, which in turn feeds a sheet where estimates  are produced for the full set of indicators. The result is one JMP Country File for each country. While the modelled estimates are accessible through a World File for all countries, the underlying data input are only accessible through individual country files. 
 
-## research
+### Use cases
 
-- applying alternative models
+The JMP uses this input data specifically to produce indicator estimates for SDG indicators 6.1 and 6.2, but there is great potential for unforeseen use cases (e.g. research, teaching, joining with other data, etc.). These could be enabled by making the data readily accessible in a form that follows FAIR data principles [@wilkinson2016fair]. There are a range of published studies, which have used the input data, but each of their own would have gone through the effort of extracting and combining all data into a single dataframe for analysis. Further, it is difficult to identify puclications that have made use of the JMP input database, because there isn't a single DOI that could be cited, nor a clear license applied to the the data.  
 
-## Problem Statement
+### Problem Statement
+
+We seek to address this unused potential by contributing software and data packages that address the aims of this call. Using open-source R Statistical Software, we will curate the data carefully and add valuable variables/categories to the exisiting data that allow for new and unexpected types of analyses. We seek to address the aim of providing a community service by organising pracitical workshops and training on the developed software and data packages. This allows for engagement with the published data on variety of levels and provides a highly relevant dataset that also opens the opportuntities for people to see "what is behind the curtain". 
+
+In some preliminary work, we have started to develop R scripts that extract the data from the JMP Country Files and combine them into a single dataframe [reference: washr R Package]. The database contains xxxxx data points from xxxxx variety of sources. We have further started to develop R scripts that replicate the regression models of the JMP using documented JMP methods, but quickly realised that using the JMP Stata script for replicating the analysis would be highly advantagoues. A research study is ongoing which applies alterntative statistical models to the input data. 
+
 
 ## ORD project plan
 
