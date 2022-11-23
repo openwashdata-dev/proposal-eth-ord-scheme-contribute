@@ -43,9 +43,8 @@ Funding is available for projects of up to 12 months with an overall budget that
 
 - https://ethrat.ch/wp-content/uploads/2022/06/2022-05-00-ETH-ORD-EPFLETHZ-information-to-applicants-Contribute.pdf
 - For applicants at ETHZ
-- In this Contribute call, applicants at ETHZ must contribute 25% of the total budget from
-the resources of their lab/group/unit, either in-cash or in-kind. See the budgeting
-guidelines below for eligible contributions
+- In this Contribute call, applicants at ETHZ must contribute 25% of the total budget from the resources of their lab/group/unit, either in-cash or in-kind. See the budgeting guidelines below for eligible contributions
+- This means an additional 22'500 CHF for us and 7'500 CHF in-kind through my salary
 
 ## Online submission platform
 
@@ -53,6 +52,10 @@ guidelines below for eligible contributions
 - SNSF guidelines CV
 - Asbtract (max 1500 characters)
 - 5 keywords
+
+## Template
+
+
 
 # Project Proposal
 
@@ -205,14 +208,24 @@ Please address these specific points:
 
 Within the ETH Domain we are able to recruit and access expectional talent that can contribute to the long-term development and sustainability of the project. It is further complements our activities on the openwashdata project, which established  a community of WASH professionals who have a shared interest in data. These professionals will learn how to use the same methods and tools that we apply here and therefore be able to carry on the activities beyond the lifecycle of the project itself.
 
+## Work Packages and milestones
+
+The following Table 2 shows a basic gantt chart against the four work packages, including program activities and community engagement of the four defined learner personas. Column “Lead” abbreviations: LS = Lars Schöbitz. SA = Scientific Assisstant. 
+
+The following Table 3 is a list of research questions associated with each of the Work Packages and related activities in Table 2. Any publications derived from this program will be published as open access material, following ORD practices and Open Science standards for computational reproducibility and sharing of data and code under FAIR principles.   
+
+Table 2: https://docs.google.com/spreadsheets/d/1pvt08daECVK_M-IY3dx1lNUSjcTVy-8miE0GptWAIlc/edit#gid=0
+
+Table 3: https://docs.google.com/spreadsheets/d/1k4eOJcaWGyJDblThgGnxUCvYUnj6qTaqX3Q-0F6WVyQ/edit#gid=0
+
+
+# Resources (including project costs)
+
+Give the amount of funding considered necessary to fulfil the objectives for the duration of the project, as well as a full justification
+
+
 ## Bibliography
 
 Please list all bibliographic references for the preceding sections.
 
-## Work Packages and milestones
-
-Please include a detailed Gantt chart or table, outlining the timeline of your project, including key activities and major deliverables.
-
-Resources (including project costs)
-Give the amount of funding considered necessary to fulfil the objectives for the duration of the project, as well as a full justification
 
