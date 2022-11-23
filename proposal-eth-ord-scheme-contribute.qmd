@@ -13,7 +13,7 @@ author:
     orcid_id: 0000-0002-2095-9724
 format: html
 citation: true
-bibliography: prop-eth-open-science.bib
+bibliography: prop-eth-ord-contribute.bib
 csl: vancouver-brackets-no-et-al.csl
 ---
 
