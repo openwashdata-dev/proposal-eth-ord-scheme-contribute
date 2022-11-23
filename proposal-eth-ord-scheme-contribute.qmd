@@ -87,21 +87,21 @@ The produced estimates are the only available source of comprehensive and intern
 
 ### JMP data input 
 
-Every two years the JMP updates its global databases to incorporate the latest available national data. [@who/unicefjointprogrammeforwatersupplysanitsationandhygienejmp2021metadata]. The data is collected from various sources, including censuses, household surveys, administrative data, and others (e.g. research). Data formats between these sources are highly heterogenous, and a significant amount of effort is invested into extracting data from each source and bringing it into a standardised format. 
+Every two years the JMP updates its global databases to incorporate the latest available national data. [@who/unicefjointprogrammeforwatersupplysanitsationandhygienejmp2021metadata]. The data is collected from various sources, including censuses, household surveys, administrative data, and others (e.g. research). Data formats between these sources are highly heterogeneous, and a significant amount of effort is invested into extracting data from each source and bringing it into a standardized format. 
 
 ### JMP Country Files
 
-So-called JMP Country Files are used for recording these data inputs in a hidden sheet of a Microsoft Excel workbook. A statistical analysis software package (Stata 14.0) imports the for all the 232 countries, areas, and territories for which data are available, and runs the estimation model. The resulting estimates are exported back to each country file in another hidden sheet, which in turn feeds a sheet where estimates  are produced for the full set of indicators. The result is one JMP Country File for each country. While the modelled estimates are accessible through a World File for all countries, the underlying data input are only accessible through individual country files. 
+So-called JMP Country Files are used for recording these data inputs in a hidden sheet of a Microsoft Excel workbook. A statistical analysis software package (Stata 14.0) imports the for all the 232 countries, areas, and territories for which data are available, and runs the estimation model. The resulting estimates are exported back to each country file in another hidden sheet, which in turn feeds a sheet where estimates  are produced for the full set of indicators. The result is one JMP Country File for each country. While the modeled estimates are accessible through a World File for all countries, the underlying data input are only accessible through individual country files. 
 
 ### Use cases
 
-The JMP uses this input data specifically to produce indicator estimates for SDG indicators 6.1 and 6.2, but there is great potential for unforeseen use cases (e.g. research, teaching, joining with other data, etc.). These could be enabled by making the data readily accessible in a form that follows FAIR data principles [@wilkinson2016fair]. There are a range of published studies, which have used the input data, but each of their own would have gone through the effort of extracting and combining all data into a single dataframe for analysis. Further, it is difficult to identify puclications that have made use of the JMP input database, because there isn't a single DOI that could be cited, nor a clear license applied to the the data. Providing open-source software and data in an accessible and citeable way can lead to significant uptake within a domain. A great example is the Bioconductor project, which is an initiative for the collaborative creation of extensible software for computational biology and bioinformatics [@gentleman2004bioconductor]. First published in 2004, the software packages developed for the R and python environment are being used by 10s of 1000s of researchers worldwide. 
+The JMP uses this input data specifically to produce indicator estimates for SDG indicators 6.1 and 6.2, but there is great potential for unforeseen use cases (e.g. research, teaching, joining with other data, etc.). These could be enabled by making the data readily accessible in a form that follows FAIR data principles [@wilkinson2016fair]. There are a range of published studies, which have used the input data, but each of their own would have gone through the effort of extracting and combining all data into a single dataframe for analysis. Further, it is difficult to identify publications that have made use of the JMP input database, because there isn't a single DOI that could be cited, nor a clear license applied to the the data. Providing open-source software and data in an accessible and cite-able way can lead to significant uptake within a domain. A great example is the Bioconductor project, which is an initiative for the collaborative creation of extensible software for computational biology and bioinformatics [@gentleman2004bioconductor]. First published in 2004, the software packages developed for the R and python environment are being used by 10s of 1000s of researchers worldwide. 
 
 ### Problem Statement
 
-We seek to address this unused potential by contributing software and data packages that address the aims of this call. Using open-source R Statistical Software, we will curate the data carefully and add valuable variables/categories to the exisiting data that allow for new and unexpected types of analyses. We seek to address the aim of providing a community service by organising pracitical workshops and training on the developed software and data packages. This allows for engagement with the published data on variety of levels and provides a highly relevant dataset that also opens the opportuntities for people to see "what is behind the curtain". 
+We seek to address this unused potential by contributing software and data packages that address the aims of this call. Using open-source R Statistical Software, we will curate the data carefully and add valuable variables/categories to the existing data that allow for new and unexpected types of analyses. We seek to address the aim of providing a community service by organizing practical workshops and training on the developed software and data packages. This allows for engagement with the published data on variety of levels and provides a highly relevant dataset that also opens the opportunities for people to see "what is behind the curtain". 
 
-In some preliminary work, we have started to develop R scripts that extract the data from the JMP Country Files and combine them into a single dataframe [reference: washr R Package]. The database contains xxxxx data points from xxxxx variety of sources. We have further started to develop R scripts that replicate the regression models of the JMP using documented JMP methods, but quickly realised that using the JMP Stata script for replicating the analysis would be highly advantagoues. A research study is ongoing which applies alterntative statistical models to the input data. 
+In some preliminary work, we have started to develop R scripts that extract the data from the JMP Country Files and combine them into a single dataframe [reference: washr R Package]. The database contains xxxxx data points from xxxxx variety of sources. We have further started to develop R scripts that replicate the regression models of the JMP using documented JMP methods, but quickly realized that using the JMP Stata script for replicating the analysis would be highly advantageous. A research study is ongoing which applies alternative statistical models to the input data. 
 
 ## ORD project plan
 
@@ -115,7 +115,7 @@ In some preliminary work, we have started to develop R scripts that extract the 
 
 **Goal:** Make data readily accessible to enable researchers and practitioners to utilize powerful data
 
-In our preliminary work, we have already written a set of functions that extract JMP input data from the JMP Country files. While this is helpful for us, it is not yet easily accessible for others. In this work package, we prepare detailed and conscise documentation that describes the data and the structure that it is published in. We prepare comprehensive metadata and complete codebooks. Using the universe of packages available in the R universe, we will publish everything as an R data package, including permissive licenses, a DOI, and an attractive public website that allows anyone to learn about the data. While the data is packaged as an R package, we will also ensure to provide guidance on how it could be used by anyone using a different data analysis software. The approach is innovative because it will lead to a standardised use of the input data. The data processing activities itself are published openly, so that each step taken to compile the resulting dataframe can be reviewed and validated. 
+In our preliminary work, we have already written a set of functions that extract JMP input data from the JMP Country files. While this is helpful for us, it is not yet easily accessible for others. In this work package, we prepare detailed and concise documentation that describes the data and the structure that it is published in. We prepare comprehensive metadata and complete codebooks. Using the universe of packages available in the R universe, we will publish everything as an R data package, including permissive licenses, a DOI, and an attractive public website that allows anyone to learn about the data. While the data is packaged as an R package, we will also ensure to provide guidance on how it could be used by anyone using a different data analysis software. The approach is innovative because it will lead to a standardized use of the input data. The data processing activities itself are published openly, so that each step taken to compile the resulting dataframe can be reviewed and validated. 
 
 **Activities:**
 
@@ -126,7 +126,7 @@ In our preliminary work, we have already written a set of functions that extract
 
 **Aims addressed**
 
-This work package focuses on aim 1 and 2 of the call. The research potential increases significantly, as data is now readily available for anyone to use it and build on. The currently established ORD practice of manually downloading MS Excel files is simplified. We further curate the data, so that novel ways of analysing it will be feasible. 
+This work package focuses on aim 1 and 2 of the call. The research potential increases significantly, as data is now readily available for anyone to use it and build on. The currently established ORD practice of manually downloading MS Excel files is simplified. We further curate the data, so that novel ways of analyzing it will be feasible. 
 
 **Research questions**
 
@@ -137,12 +137,12 @@ This work package focuses on aim 1 and 2 of the call. The research potential inc
 
 **Goal:** Develop open-source software to support transparent documentation of modelling activities
 
-The JMP documents methods for the calculation of indicators in detail, however, the actual script which produces the estimates remains as closed access. By publishing this script as open source software anyone view, use, modify, and distribute the work for any purpose, envorced by a permissive open-source license (e.g MIT License). Further, results become reproducible by providing all necessary data (through WP1) and the computer code that runs the regression analysis. This significantly increases transparency of the process and could result in an increase of "trustability" for the actual results. Other added advantages are (1) a complete track record of the complete history of the development process, (2) facilitated collaboration and review process where useful changes and thoughtful contributions can be made to develop our project further; (3) publication of validated research and avoidance of misinformation (4) more efficiency in writing papers, thesis and reports; (5) fair credit for the work; (6) ensured continuitiy of the work [@community2019turing]. 
+The JMP documents methods for the calculation of indicators in detail, however, the actual script which produces the estimates remains as closed access. By publishing this script as open source software anyone view, use, modify, and distribute the work for any purpose, enforced by a permissive open-source license (e.g MIT License). Further, results become reproducible by providing all necessary data (through WP1) and the computer code that runs the regression analysis. This significantly increases transparency of the process and could result in an increase of "trustability" for the actual results. Other added advantages are (1) a complete track record of the complete history of the development process, (2) facilitated collaboration and review process where useful changes and thoughtful contributions can be made to develop our project further; (3) publication of validated research and avoidance of misinformation (4) more efficiency in writing papers, thesis and reports; (5) fair credit for the work; (6) ensured continuity of the work [@community2019turing]. 
 
 **Activities:**
 
 1. Work with the JMP team to transfer the current Stata script into an R script
-2. Prepare a set of R functions that achieve all necessary data manipulation, modelling and visualisation steps 
+2. Prepare a set of R functions that achieve all necessary data manipulation, modelling and visualization steps 
 3. Write up complete documentation for developed R functions 
 4. Publish R functions as a complete piece of software as an R Package as described in [Ref R Packages]
 5. Use packages of the R environment to publish R Package as a public website, including all documentation and vignettes
@@ -154,7 +154,7 @@ As WP1, this work package focuses on aim 1 and 2 of the call.
 **Research questions**
 
 - RQ2.1: What are the experienced barriers for publishing the code open-source?
-- RQ2.2: What are the practical difficulties of transfering a Stata script into a set of R scripts that achieve the same results?
+- RQ2.2: What are the practical difficulties of transferring a Stata script into a set of R scripts that achieve the same results?
 
 ### WP3: Collaborate with the JMP to promote use and maintenance of R packages
 
@@ -171,7 +171,7 @@ Open-source projects live by the community the contributes to them. They can onl
 
 **Aims addressed**
 
-This work packages addresses aim 3 of the call. The project team will actively engage with the JMP to benefit from the established code, but the at the same time offer opportunities for the JMP team to learn how the developed software could be applied for their own benefit. Some team members already use the R Statistical Software, while others may need to be provided with targeted trainin. As the Global Health Engineering group already is a leader in providing training for Open Science and Reproducible Research with R, we would use our expertise to transfer these competencies. 
+This work packages addresses aim 3 of the call. The project team will actively engage with the JMP to benefit from the established code, but the at the same time offer opportunities for the JMP team to learn how the developed software could be applied for their own benefit. Some team members already use the R Statistical Software, while others may need to be provided with targeted training. As the Global Health Engineering group already is a leader in providing training for Open Science and Reproducible Research with R, we would use our expertise to transfer these competencies. 
 
 **Research questions**
 
@@ -182,7 +182,7 @@ This work packages addresses aim 3 of the call. The project team will actively e
 
 **Goal:** Widely share the developed package for increased use and impact
 
-We will use our established networks and communities to dissimenate the developed products. The process can tightly fit into our openwashdata project, funded under the ETH ORD Scheme for Explore Projects and starting March 1st, 2023. The packages will provide a neat opportunity to prepare novel teaching material that motivates WASH professionals and at the same time disseminates our products. 
+We will use our established networks and communities to disseminate the developed products. The process can tightly fit into our openwashdata project, funded under the ETH ORD Scheme for Explore Projects and starting March 1st, 2023. The packages will provide a neat opportunity to prepare novel teaching material that motivates WASH professionals and at the same time disseminates our products. 
 
 **Activities:**
 
@@ -206,7 +206,7 @@ Please address these specific points:
 - How sustainable is the proposed project inside the ETH Domain? 
 - To what extent may an existing or a newly formed community (be able to) engage with the ORD practice(s) built-up during the project?
 
-Within the ETH Domain we are able to recruit and access expectional talent that can contribute to the long-term development and sustainability of the project. It is further complements our activities on the openwashdata project, which established  a community of WASH professionals who have a shared interest in data. These professionals will learn how to use the same methods and tools that we apply here and therefore be able to carry on the activities beyond the lifecycle of the project itself.
+Within the ETH Domain we are able to recruit and access exceptional talent that can contribute to the long-term development and sustainability of the project. It is further complements our activities on the openwashdata project, which established  a community of WASH professionals who have a shared interest in data. These professionals will learn how to use the same methods and tools that we apply here and therefore be able to carry on the activities beyond the lifecycle of the project itself.
 
 ## Work Packages and milestones
 
@@ -218,14 +218,11 @@ Table 2: https://docs.google.com/spreadsheets/d/1pvt08daECVK_M-IY3dx1lNUSjcTVy-8
 
 Table 3: https://docs.google.com/spreadsheets/d/1k4eOJcaWGyJDblThgGnxUCvYUnj6qTaqX3Q-0F6WVyQ/edit#gid=0
 
-
 # Resources (including project costs)
 
-Give the amount of funding considered necessary to fulfil the objectives for the duration of the project, as well as a full justification
-
+Table 4: https://docs.google.com/spreadsheets/d/1jQE1qrO0T88aXjeARYQaQ3sNsX8UaURJdm7B-yAvDN0/edit#gid=0
 
 ## Bibliography
 
-Please list all bibliographic references for the preceding sections.
 
 
