@@ -11,13 +11,16 @@ author:
     affiliation: Global Health Engineering, ETH Zurich
     affiliation_url: https://ghe.ethz.ch/
     orcid_id: 0000-0002-2095-9724
-format: html
+format: 
+  docx:
+    number-sections: true
+    toc: true
 citation: true
 bibliography: prop-eth-ord-contribute.bib
 csl: vancouver-brackets-no-et-al.csl
 ---
 
-# Info
+# Call Info
 
 ## Website
 
@@ -55,19 +58,19 @@ Funding is available for projects of up to 12 months with an overall budget that
 
 ## Template
 
-
-
 # Project Proposal
-
-## Instructions
 
 Your project proposal must not exceed 6 pages, excluding the bibliography (A4, Arial 11-point font, 1.5 line-spacing, 2-centimeter margins). Please address all points below.
 
-## Proposal full title 
+## Proposal full title  (TODO)
+
+**Instructions**
 
 Please include a project title (max. 12 words); this title will be used for all correspondence. Proposal Acronym (mandatory)
 
 ## Background and motivation
+
+**Instructions**
 
 Please explain which aim(s) of the ORD “contribute projects” you seek to address:
 
