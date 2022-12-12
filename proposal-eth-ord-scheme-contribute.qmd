@@ -20,7 +20,15 @@ bibliography: prop-eth-ord-contribute.bib
 csl: vancouver-brackets-no-et-al.csl
 ---
 
-## Proposal full title  (TODO)
+# Abstract
+
+Decades of manual data structuring have resulted in the most comprehensive and internationally-comparable information on Water, Sanitation, and Hygiene (WASH) coverage. The databases are maintained by the WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (JMP) and data are shared in spreadhsheet-based proprietary software. This under utilizes the potential those data could have for other purposes than the national, regional and global monitoring of progress in WASH mandated to the JMP.
+
+We will approach this unused potential by developing open-source data and software packages that follow FAIR data principles to share the data within the WASH community and beyond. In the process, we engage with the community by hosting free learning events for which we use and open-source computational tools, enabling community members to further competencies aligned with FAIR data principles.
+
+Keywords: SDGs, monitoring, open data, open code, R package
+
+# Proposal full title
 
 **Instructions**
 
@@ -28,39 +36,37 @@ Open JMP - unlocking the potential of global indicator data
 
 Acronym: openjmp
 
-## Background and motivation
+# Background and motivation
 
-**Instructions**
-
-### UNICEF/WHO Joint Monitoring Programme (JMP)
+## UNICEF/WHO Joint Monitoring Programme (JMP)
 
 The WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (JMP) was established in 1990 to monitor global progress on drinking water, sanitation and hygiene. The JMP produces estimates for a total of 26 indicators related to water, sanitation and hygiene (WASH). Estimates are produced using linear regression models at the country, regional, and the global levels  [@who/unicefjointprogrammeforwatersupplysanitsationandhygienejmp2018jmp]. 
 
-### JMP modelled estimates (data output)
+## JMP modelled estimates (data output)
 
 The estimates produced are the only available source of comprehensive and internationally-comparable information on WASH coverage. Data from JMP are also used in reports used to estimate the global burden of disease associated with water and sanitation and to assess the cost-effectiveness, benefit-cost ratio, global expenditure, and investment needs in global drinking water and sanitation [@bartram2014globala]. More recently, the data have been used to quantify the service needs for 772 million onsite sanitation facilities [@greene2021role].
 
-### JMP data input 
+## JMP data input 
 
-very two years the JMP updates its global databases to incorporate the latest available national data. [@who/unicefjointprogrammeforwatersupplysanitsationandhygienejmp2021metadata]. The data is collected from various sources, including censuses, household surveys, administrative data, and others (e.g. research). Data formats between these sources are highly heterogeneous, and a significant amount of effort is invested into extracting data from each source and bringing it into a standardized format. 
+Every two years the JMP updates its global databases to incorporate the latest available national data. [@who/unicefjointprogrammeforwatersupplysanitsationandhygienejmp2021metadata]. The data is collected from various sources, including censuses, household surveys, administrative data, and others (e.g. research). Data formats between these sources are highly heterogeneous, and a significant amount of effort is invested into extracting data from each source and bringing it into a standardized format. 
 
-### JMP Country Files
+## JMP Country Files
 
 So-called "JMP Country Files" are used for recording these data inputs in a hidden sheet of a Microsoft Excel workbook. A proprietary statistical analysis software package (Stata 14.0) imports the data for all the 232 countries, areas, and territories for which data are available, and runs the estimation model. The resulting estimates are exported back to each country file into another hidden sheet, which in turn feeds a sheet where estimates are produced for the full set of indicators. The result is one JMP Country File for each country. While the combined modeled estimates are accessible through a MS Excel "JMP World File" for all countries, the underlying raw data for the analysis are only accessible through individual JMP Country Files. The underlying Stata scripts that perform the analysis and produce the output data for the MS Excel files are not publicly available.
 
-### Use cases
+## Use cases
 
 The JMP uses these raw data specifically to produce indicator estimates for SDG indicators 6.1 and 6.2, but there is great potential for unforeseen use cases (e.g. in research, teaching, joining with other data, etc.). These added benefits could be enabled by making the data readily accessible in a form that follows FAIR data principles [@wilkinson2016fair]. There are a range of published studies, which have used the input data, but each would have gone through the effort of extracting and combining all data into a single dataframe for analysis. Further, it is difficult to identify publications that have made use of the JMP input database, because there isn’t a single DOI that could be cited, nor a clear license applied to the raw data. Providing open-source software and data in an accessible and cite-able way can lead to significant uptake within a domain. A great example is the Bioconductor project, which is an initiative for the collaborative creation of extensible software for computational biology and bioinformatics [@gentleman2004bioconductor]. First published in 2004, the software packages developed for the R and python environment are being used by  thousands of researchers worldwide.
 
-### Problem Statement
+## Problem Statement
 
 We seek to address this unused potential by contributing software and data packages that address the aims of this call. Using open-source R Statistical Software, we will curate the data carefully and add valuable variables/categories to the existing data that allow for new and unexpected types of analyses. We seek to address the aim of providing a community service by organizing practical workshops and training on the developed software and data packages. These activities will allow for greater engagement with the published data on variety of levels and will provide a highly relevant dataset that also opens the opportunities for people to see “what is behind the curtain”.
 
 In some preliminary work, we developed R scripts that extract the data from the JMP Country Files and combine them into a single dataframe [reference: washr R Package]. We have further started to develop R scripts that replicate the regression models of the JMP using documented JMP methods, but quickly realized that using the JMP Stata script for replicating the analysis would be highly advantageous. A research study is ongoing which applies alternative statistical models to the input data.
 
-## ORD project plan
+# ORD project plan
 
-### WP1: Document and publish R data package `jmpinput`
+## WP1: Document and publish R data package `jmpinput`
 
 **Goal:** Make data readily accessible to enable researchers and practitioners to utilize powerful data
 
@@ -82,7 +88,7 @@ This work package focuses on aim 1 and 2 of the call. The research potential inc
 - RQ1.1: What is the impact of sharing the data as a data package? Indicator: Number of citations per year
 - RQ1.2: What use cases beyond using logistic regression for estimates does the WASH community establish? 
 
-### WP2: Prepare and document R software Package `jmpmodel`
+## WP2: Prepare and document R software Package `jmpmodel`
 
 **Goal:** Develop open-source software to support transparent documentation of modelling activities for primary indicators
 
@@ -105,7 +111,7 @@ As WP1, this work package focuses on aim 1 and 2 of the call.
 - RQ2.1: What are the barriers experienced for publishing the code open-source?
 - RQ2.2: What are the practical difficulties of producing a set of R scripts that achieve the same results as the unpublished Stata scripts?
 
-### WP3: Dissemination
+## WP3: Dissemination
 
 **Goal:** Seek active collaboration on package development to increase potential usage and long-term maintenance of data and software package. 
 
@@ -128,7 +134,7 @@ This work packages addresses aim 3 of the call. The project team will actively e
 - RQ3.2: What is the cost-effectiveness (cost/hour) of publishing R Packages under WP1 and WP2 (for benchmarking future initiatives)?
 - RQ3.3: Where (location), when (over time), and how (view, downloand, cite) are the R packages used? This research question can not be answered within the time constraints of the project, but will be monitored and evaluated following the close of the grant. 
 
-## Impact
+# Impact
 
 Please address these specific points: 
 
@@ -137,7 +143,7 @@ Please address these specific points:
 
 Within the ETH Domain we are able to recruit and access exceptional talent that can contribute to the long-term development and sustainability of the project. This work further complements our activities on the openwashdata project, which established a community of WASH professionals who have a shared interest in data. These professionals will learn how to use the same methods and tools that we apply here and will therefore be able to carry on the activities beyond the lifecycle of the project itself.
 
-## Work Packages and milestones
+# Work Packages and milestones
 
 The following Table 2 shows a basic gantt chart against the four work packages, including program activities and community engagement of the four defined learner personas. Column “Lead” abbreviations: LS = Lars Schöbitz. SA = Scientific Assisstant. 
 
@@ -151,7 +157,7 @@ Table 3: https://docs.google.com/spreadsheets/d/1k4eOJcaWGyJDblThgGnxUCvYUnj6qTa
 
 Table 4: https://docs.google.com/spreadsheets/d/1jQE1qrO0T88aXjeARYQaQ3sNsX8UaURJdm7B-yAvDN0/edit#gid=0
 
-## Bibliography
+# Bibliography
 
 
 
