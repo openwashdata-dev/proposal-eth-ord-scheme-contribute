@@ -76,7 +76,7 @@ In our preliminary work, we have already written a set of functions that extract
 
 1. Write up documentation that describes the origin of data and structure that it is provided in
 2. Prepare at least two use cases as "vignettes" that can be published together with the data 
-3. Publish data, documentation and "vignettes" as R Package using workflows described in [Ref R Packages]
+3. Publish data, documentation and "vignettes" as an R Package 
 4. Use packages of the R environment to publish R Package as a public website, including all documentation and vignettes
 
 **Aims addressed**
@@ -99,7 +99,7 @@ The JMP documents methods for the calculation of indicators in detail, however, 
 1. Work with the JMP team replicate production of the basic indicators for individual countries, areas and territories, drawing on the data inputs described in WP1
 2. Prepare a set of R functions that achieve all necessary data manipulation, modelling and visualization steps 
 3. Write up complete documentation for developed R functions 
-4. Publish R functions as a complete piece of software as an R Package as described in [Ref R Packages]
+4. Publish R functions as a complete piece of software as an R Package
 5. Use packages of the R environment to publish R Package as a public website, including all documentation and vignettes
 
 **Aims addressed**
