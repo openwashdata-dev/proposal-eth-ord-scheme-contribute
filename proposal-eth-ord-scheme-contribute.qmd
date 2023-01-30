@@ -1,5 +1,6 @@
 ---
-title: "Untitled"
+title: "Open JMP"
+subtitle: "unlocking the potential of global indicator data"
 author: 
   - name: "Lars Schöbitz"
     url: https://www.lse.de
@@ -15,6 +16,8 @@ format:
   docx:
     number-sections: true
     toc: true
+  gfm:
+    number-sections: true
 citation: true
 bibliography: prop-eth-ord-contribute.bib
 csl: vancouver-brackets-no-et-al.csl
